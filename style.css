@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Ajuster la marge en haut selon vos besoins */
+    
+}
+
+#heroes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px; /* Ajuster la marge ici */
+    width: 200px;
+    text-align: center;
+    background-color: #d2d2d2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:first-child {
+    margin-left: 0; /* Aucune marge à gauche pour la première carte */
+}
+
+.choose-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+/* Ajoutez ces styles dans votre section CSS */
+
+/* Style de la barre de sélection */
+select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    background-color: #d2d2d2;
+    color: #1a1a1a;
+    appearance: none;
+    -webkit-appearance: none; /* Pour la compatibilité avec les navigateurs WebKit (comme Chrome et Safari) */
+    -moz-appearance: none; /* Pour la compatibilité avec les navigateurs basés sur Gecko (comme Firefox) */
+    text-indent: 0.01px; /* Supprime la flèche par défaut sur certains navigateurs */
+    text-overflow: ''; /* Supprime la flèche par défaut sur certains navigateurs */
+}
+
+/* Style au survol de la barre de sélection */
+select:hover {
+    border-color: #4caf50;
+}
+
+/* Style lorsqu'on choisit un élément */
+select:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.7);
+}
+/* Ajoutez ces styles dans votre section CSS */
+
+/* Style du formulaire */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style du champ de saisie pour le nom du personnage */
+#character-name {
+    margin: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    background-color: #d2d2d2;
+    color: #1a1a1a;
+}
+
+/* Style du bouton "utiliser ce personnage" */
+#use-character-button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    background-image: url("./images/e_WvRTzU3h8NRiSkXxtrDzSxL89fFBwXiSA-wTmvSCI.webp");
+    background-size: cover;
+}
+
+h1{
+
+    text-align: center;
+    color: white;
+}
+
+.chatbox {
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.logs {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.boxes {
+    display: flex;
+}
+
+.herobox, .evilbox {
+    flex: 1;
+    text-align: center; /* Aligner le contenu au centre si nécessaire */
+}
+
+.evil {
+    width: 100px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Ajustez la hauteur en conséquence */
+}
