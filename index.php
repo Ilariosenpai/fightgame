@@ -43,7 +43,7 @@ if(isset ($_POST['nom']) && isset($_POST['classe']) && !empty ($_POST['nom'])){
 }
 
 </style>
- 
+<script src="script.js" defer></script>
 </head>
 <body>
 
@@ -67,7 +67,7 @@ if(isset ($_POST['nom']) && isset($_POST['classe']) && !empty ($_POST['nom'])){
   
                         
 
-                        <input type="submit" value="Utiliser ce personnage" name="utiliser" id="use-character-button" />
+                        <input onclick="processName()" type="submit"   value="Utiliser ce personnage" name="utiliser" id="use-character-button" />
 
                         </div>
 
