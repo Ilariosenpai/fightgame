@@ -28,8 +28,8 @@ class HeroesManager{
 
         $ajout->execute([
 
-            'nom'=> $hero->getNom(),
-            'classe'=>$hero->getClasse()
+            'nom'=> htmlspecialchars($hero->getNom()),
+            'classe'=>htmlspecialchars($hero->getClasse())
         ]);
 
         $id = $this->db->lastInsertId();

@@ -3,9 +3,9 @@ function processName() {
     if (containsDangerousChars(name)) {
         alert("Tentative d'injection XSS détectée. Recherche prédéfinie lancée.");
         preDefinedSearch();
-        return false; // Annuler l'envoi du formulaire
+        return false; 
     } else {
-        return true; // Autoriser l'envoi du formulaire
+        return true; 
     }
 }
 
@@ -20,6 +20,6 @@ function searchGoogle(query) {
 }
 
 function containsDangerousChars(input) {
-    let regex = /<|>|&|"|'|\//g; // Caractères potentiellement dangereux
+    let regex = /<|>|&|"|'|\//g; 
     return regex.test(input);
 }
